@@ -6,4 +6,4 @@ RUN apk add --update tzdata ca-certificates haproxy &&\
     echo "Europe/Berlin" > /etc/timezone &&\
     rm -rf /var/cache/apk/* 
 
-CMD ["haproxy", "-d", "-f", "/defaults/haproxy.cfg"]
+CMD ["haproxy", "-d", "-f", "/configuration/haproxy.cfg"]
